@@ -218,11 +218,17 @@ function loadEvent() {
     <h1>${peruO.name.official}</h1>
     <h2>${peruO.capital[0]}</h2>
     <ul>
-      <li>First language</li>
+        <li>First language</li>
     </ul>
     <!-- ha landlocked true <h5>"I've never met the sea</h5> -->
 </section>
   `;
+
+  for (const i in peruO.languages){
+    console.log(peruO.languages[i]);
+  }
+  console.log(peruO.landlocked);
+  
 
   console.log(rootElement);
 
