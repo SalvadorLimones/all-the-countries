@@ -13,6 +13,7 @@ async function loadEvent() {
         <h1>${country.name.official}</h1>
         <h2>${country.capital}</h2>
         <h4>Languages: ${countryLanguage()}</h4>
+        <h3>${landLocked()}</h3>
     </section>
     `;
       
@@ -25,6 +26,14 @@ async function loadEvent() {
         }
         return(myLanguages);   
     }
+
+    function landLocked(){
+        if(country.landlocked){
+            return("I've never seen the sea!")
+        } else{
+            return("");
+        }
+    } 
       
     rootElement.insertAdjacentHTML("beforeend", countryHTML);  
 }
