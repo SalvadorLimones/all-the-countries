@@ -12,12 +12,23 @@ async function loadEvent() {
         <img src="${country.flags.png}" alt="flag">
         <h1>${country.name.official}</h1>
         <h2>${country.capital}</h2>
+        <h4>Languages: ${countryLanguage()}</h4>
     </section>
     `;
-
+      
+    function countryLanguage(){
+        console.log(`${country.name.common}:`);
+        var myLanguages=[];
+        for (const i in country.languages){
+            console.log(country.languages[i]);
+            myLanguages.push(country.languages[i]);
+        }
+        return(myLanguages);   
+    }
+      
     rootElement.insertAdjacentHTML("beforeend", countryHTML);  
-  }
-
+}
+    
  /* const peruO = peru[0];
 
 
