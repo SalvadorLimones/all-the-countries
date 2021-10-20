@@ -31,7 +31,7 @@ async function loadEvent() {
             if(country.landlocked){
                 return("I've never seen the sea!")
             } else{
-                return("");
+                return("Vamos a la playa!");
             }
         } 
       
