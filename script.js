@@ -26,7 +26,7 @@ async function loadEvent() {
             }
             return(myLanguages);   
         }
-
+        
         function landLocked(){
             if(country.landlocked){
                 return("I've never seen the sea!")
